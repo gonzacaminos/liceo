@@ -35,7 +35,7 @@ export default function Home() {
     <Layout style={styles} className="bg-cover bg-no-repeat bg-blend-multiply">
       <div className="max-w-6xl mx-auto flex flex-col lg:h-screen px-4 py-10">
         <input type="text" className="text-6xl font-bold mb-10 bg-transparent" defaultValue={titulo}/>
-        <textarea className="text-xl bg-transparent" defaultValue={texto}/>
+        <textarea className="text-xl bg-transparent mb-4" defaultValue={texto}/>
         <label className="text-base mb-10 bg-transparent pr-10"><input type="checkbox" className="p-10" id="cbox1" defaultChecked={false} onClick={changeImage}/> Usar imagen? </label>
         <div className="mt-10 lg:mt-auto">
           <div className="lg:flex justify-between">
