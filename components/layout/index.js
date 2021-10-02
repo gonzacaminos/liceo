@@ -3,9 +3,9 @@ import Head from 'next/head'
 
 export default function Layout(props) {
   return (
-    <main>
+    <main {...props}>
      <Head>
-        <title>{props.title || 'App Title'}</title>
+        <title>{props.title || 'Formacion Visual - 3B'}</title>
         <meta name="description" content="App Description"/>
       </Head>
     {props.children}
