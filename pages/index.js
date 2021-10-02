@@ -30,7 +30,7 @@ export default function Home() {
     <Layout style={{background: fondo, color: color}}>
       <div className="max-w-6xl mx-auto flex flex-col h-screen py-10">
         <input type="text" className="text-6xl font-bold mb-10 bg-transparent" defaultValue={titulo}/>
-        <input type="text" className="text-xl bg-transparent" defaultValue={texto}/>
+        <textarea className="text-xl bg-transparent" defaultValue={texto}/>
         <div className="mt-auto">
           <div className="flex justify-between">
             <div>
