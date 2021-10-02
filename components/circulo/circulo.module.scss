@@ -1,0 +1,13 @@
+.circulo {
+    svg {
+        margin: 0 auto;
+        &:hover {
+            cursor: pointer;
+        }
+        path {
+            &:hover, &:focus {
+                filter: brightness(1.5);
+            }
+        }
+    }
+}
