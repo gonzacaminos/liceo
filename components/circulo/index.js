@@ -13,7 +13,7 @@ export default function Circulo(props){
         const paths = circulo.current.querySelectorAll('svg,path')
         const target = e.target
         let _selected = [...selected]
-        const _color = {hex: target.getAttribute('fill') }
+        const _color = target.getAttribute('fill') ? {hex: target.getAttribute('fill') } : false
 
         if(!e.target.tagName == "path" || !_color) {
             return false
