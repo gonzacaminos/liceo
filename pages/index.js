@@ -1,6 +1,6 @@
 import {useState, useEffect} from 'react'
 import Layout from '@/components/layout'
-import { PhotoshopPicker, SketchPicker } from 'react-color'
+import { SliderPicker, SketchPicker } from 'react-color'
 import Circulo from '@/components/circulo'
 import { urlObjectKeys } from 'next/dist/shared/lib/utils'
 
@@ -41,15 +41,17 @@ export default function Home() {
           <div className="lg:flex justify-between">
             <div className="p-4 mx-auto">
               <p className="text-base text-center mb-4">Color de fondo: {fondo}</p>
-              <SketchPicker color={fondo} onChangeComplete={changeFondo } className="mx-auto"/>
+              <SketchPicker color={fondo} onChangeComplete={changeFondo } className="hidden lg:block mx-auto"/>
+              <SliderPicker color={fondo} onChangeComplete={changeFondo } className="lg:hidden mx-auto"/>
             </div>
-            <div className="p-4 mx-auto">
+            <div className="p-4 mx-auto hidden">
             <p className="text-base text-center mb-4">Shift para cambiar el color de texto</p>
              <Circulo setFondo={changeFondo} setColor={changeColor}/>
             </div>
             <div className="p-4 mx-auto">
               <p className="text-base text-center mb-4">Color de texto: {color}</p>
-              <SketchPicker color={color} onChangeComplete={changeColor} className="mx-auto"/>
+              <SketchPicker color={color} onChangeComplete={changeColor} className="hidden lg:block mx-auto"/>
+              <SliderPicker color={color} onChangeComplete={changeColor } className="lg:hidden mx-auto"/>
             </div>
             
           </div>
