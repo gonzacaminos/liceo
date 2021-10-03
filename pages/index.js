@@ -31,7 +31,7 @@ export default function Home() {
  
 
   return (
-    <Layout style={styles} className="bg-cover bg-no-repeat bg-blend-multiply">
+    <Layout style={styles} className="bg-cover bg-center bg-no-repeat bg-blend-multiply">
       <div className="max-w-6xl mx-auto flex flex-col min-h-screen px-4 py-10">
         <input type="text" className="text-6xl font-bold mb-4 bg-transparent" defaultValue={titulo}/>
         <textarea className="text-xl bg-transparent mb-4" defaultValue={texto}/>

@@ -2,7 +2,7 @@ import {data} from './data'
 import Trabajo from './trabajo'
 
 export default function Trabajos(props){
-    console.log(data)
+
     const renderTrabajos = () => (
         data.map(item => (
            <Trabajo data={item} />
