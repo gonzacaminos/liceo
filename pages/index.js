@@ -2,13 +2,12 @@ import {useState, useEffect} from 'react'
 import Layout from '@/components/layout'
 import { SliderPicker, SketchPicker } from 'react-color'
 import Circulo from '@/components/circulo'
-import { urlObjectKeys } from 'next/dist/shared/lib/utils'
 
 export default function Home() {
 
   const titulo = "Hola, chicxs!"
   const texto = "Veamos qué tan fácil es hacer que un texto se lea sobre un fondo y qué podemos hacer al respecto."
-  const [color, setColor] = useState("#D50E0E")
+  const [color, setColor] = useState("#3d3d3d")
   const [fondo, setFondo] = useState("#eeeeee")
   const [useImage, setUseImage] = useState(false)
 
